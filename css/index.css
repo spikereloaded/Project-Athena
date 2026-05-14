@@ -35,14 +35,32 @@ header>div p span {
 #index-cards {
     padding: 50px;
     display: flex;
-    background-image: url("../images/moon-eclipse.jpg");
+    background-color:black;
     height:50vh;
 }
 
-#past-work {
-    background: black;
-    height: 500px;
+#mission-statement {
+    padding-top:1px;
+    background-image: url("../images/lunar-surface.jpg");
+    background-color:black;
+    background-size: cover;
+    color:white;
+    height: 100vh;
+    background-repeat: no-repeat;
 }
+#mission-statement>div{
+    width:30%;
+    margin:15% 0 0 7%;
+    background-color: rgba(0,0,0,0);
+    border-radius:10px;
+    padding:25px;
+    transition: 1s;
+}
+#mission-statement>div:hover{
+    background-color:rgba(0,0,0,.8);
+
+}
+
 
 #watch-button {
     text-align: center;
@@ -55,11 +73,13 @@ header>div p span {
     padding: 15px;
     text-decoration: none;
     color: white;
-    border:2px solid white;
+    border:1px solid white;
     border-radius:5px;
+    background-color:rgba(240, 255, 255,0);
+    transition:.3s;
 }
 #watch-button>a:hover{
-    background-color:azure;
+    background-color:rgba(240, 255, 255,1);
     color:black;
 }
 
