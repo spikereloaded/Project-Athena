@@ -1,10 +1,11 @@
-
 body {
     margin: 0px;
     padding: 0px;
     min-height: 100vh;
 }
-
+p{
+    font-family: 'Aldrich', 'Verdana', sans-serif;
+}
 nav {
     background-color: black;
     color: white;
@@ -13,8 +14,8 @@ nav {
     width: 100%;
     display: flex;
     z-index: 2;
-    font-family:'Aldrich','Verdana', sans-serif;
-    text-transform:uppercase;
+    font-family: 'Aldrich', 'Verdana', sans-serif;
+    text-transform: uppercase;
 }
 
 nav a {
@@ -54,11 +55,41 @@ h1 {
 }
 
 footer {
-    width:100%;
+    width: 100%;
     text-align: center;
-    height:200px;
+    height: 200px;
 
 }
-#footer-socials{
-    padding:50px;
+
+#footer-socials {
+    padding: 50px;
+}
+.button-class{
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0);
+    transition: .6s;
+    text-align: center;
+    width:50%;
+    font-size:1rem;
+    text-transform: uppercase;
+    font-family: 'Aldrich', 'Verdana', sans-serif;
+    text-decoration: none;
+}
+.button-right{
+    float:right;
+}
+.button-left{
+    float:left;
+}
+.button-class:visited{
+    color:white;
+}
+.button-class:hover{
+    background-color:rgba(255,255,255,1);
+    color:black;
 }
