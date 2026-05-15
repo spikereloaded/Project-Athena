@@ -9,41 +9,44 @@ p{
 nav {
     background-color: black;
     color: white;
-    padding: 5px;
     position: fixed;
     width: 100%;
     display: flex;
-    z-index: 2;
+    z-index: 3;
     font-family: 'Aldrich', 'Verdana', sans-serif;
     text-transform: uppercase;
+    padding-left:20px;
+}
+nav>h1{
+    margin-bottom:0px;
+    margin-top:15px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    padding: 3px 10px;
+    padding: 10px;
     font-size: 1rem;
+    transition:.5s;
+    border-radius: 5px;
 }
-
+nav a:hover {
+    background-color:rgba(255,255,255,1);
+    color:black;
+}
 #navigation>ul {
     list-style: none;
     padding-left: 0px;
-    margin: 0px;
     padding: 10px;
     margin-left: 60px;
+    margin-bottom:5px;
+    margin-top:10px;
 }
 
 nav li {
     display: inline;
     margin: 0px 30px;
 }
-
-nav a:hover {
-
-    background-color: rgba(235, 235, 235, 0.5);
-    border-radius: 2px;
-}
-
 #site-logo>img {
     width: 150px;
     padding: 10px;
