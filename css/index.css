@@ -26,17 +26,12 @@ header>div p {
     margin-top: 0;
     font-size: 1rem;
 }
-
-header>div p span {
-    font-weight: 600;
-}
-
 #kennedy-box {
     background-color: black;
     height: 80vh;
     overflow: hidden;
     position: relative;
-    text-align: right;
+    
 }
 
 #kennedy-video {
@@ -58,7 +53,11 @@ header>div p span {
     border-radius: 10px;
     padding: 25px;
     transition: 1s;
+    
 
+}
+#kennedy-box>div p{
+    line-height: 1.5rem;
 }
 
 #mission-statement {
@@ -81,7 +80,9 @@ header>div p span {
     padding: 25px;
     transition: 1s;
 }
-
+#mission-statement>div p{
+    line-height: 1.5rem;
+}
 #mission-statement>div:hover {
     background-color: rgba(0, 0, 0, .8);
 
@@ -102,4 +103,13 @@ header>div p span {
     border-radius: 10px;
     padding: 25px;
     transition: 1s;
+}
+#launch-countdown{
+    position:absolute;
+    right:5%;
+    bottom:8%;
+    font-family: 'Aldrich','Verdana',sans-serif;
+    color: white;
+    text-align:right;
+   
 }
