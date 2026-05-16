@@ -1,12 +1,20 @@
+//hides the countdown timer until the countdown has been calculated and set
+//document.getElementById("launch-countdown").hidden = true;
+
 // toggles the play state of the video playing in the background of panel 3
 function toggleVideo() {
     let panelVideo = document.getElementById("kennedy-video");
+    let toggleButton = document.getElementById("toggle-button");
 
     if (panelVideo.paused) {
+        panelVideo.volume = 0.5;
         panelVideo.play()
         panelVideo.muted = false;
+        
+        toggleButton.innerText = "Pause";
     } else {
         panelVideo.pause();
+        toggleButton.innerText = "Play";
     }
 }
 
@@ -32,6 +40,9 @@ var x = setInterval(function() {
   // Display the result in the element with id="demo"
   document.getElementById("countdown-text").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
+//   if (document.getElementById("launch-countdown").hidden == true) {
+//     document.getElementById("launch-countdown").hidden = false;
+//   }
 
   // If the count down is finished, write some text
   if (distance < 0) {

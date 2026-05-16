@@ -3,23 +3,26 @@ body {
     padding: 0px;
     min-height: 100vh;
 }
-p{
+
+p {
     font-family: 'Aldrich', 'Verdana', sans-serif;
 }
+
 nav {
     background-color: black;
     color: white;
     position: fixed;
-    width: 100%;
+    width: 100vw;
     display: flex;
     z-index: 3;
     font-family: 'Aldrich', 'Verdana', sans-serif;
     text-transform: uppercase;
-    padding-left:20px;
+    padding-left: 20px;
 }
-nav>h1{
-    margin-bottom:0px;
-    margin-top:15px;
+
+nav>h1 {
+    margin-bottom: 0px;
+    margin-top: 15px;
 }
 
 nav a {
@@ -27,32 +30,44 @@ nav a {
     text-decoration: none;
     padding: 10px;
     font-size: 1rem;
-    transition:.5s;
+    transition: .5s;
     border-radius: 5px;
+    vertical-align: sub;
 }
+
 nav a:hover {
-    background-color:rgba(255,255,255,1);
-    color:black;
+    background-color: rgba(255, 255, 255, 1);
+    color: black;
 }
+
+#navigation {
+    width: 60%
+}
+
 #navigation>ul {
     list-style: none;
     padding-left: 0px;
     padding: 10px;
     margin-left: 60px;
-    margin-bottom:5px;
-    margin-top:10px;
+    margin-bottom: 5px;
+    margin-top: 10px;
 }
 
 nav li {
     display: inline;
     margin: 0px 30px;
 }
+
 #site-logo>img {
     width: 150px;
     padding: 10px;
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: 'Aldrich', 'Verdana', sans-serif;
     text-transform: uppercase;
 }
@@ -61,14 +76,17 @@ footer {
     width: 100%;
     text-align: center;
     height: 200px;
+    background-color: black;
+    color: white;
 
 }
 
 #footer-socials {
     padding: 50px;
 }
-.button-class{
-    display: inline;
+
+.button-class {
+    display: block;
     padding: 15px;
     text-decoration: none;
     color: white;
@@ -77,22 +95,26 @@ footer {
     background-color: rgba(255, 255, 255, 0);
     transition: .6s;
     text-align: center;
-    width:50%;
-    font-size:1rem;
+    width: 50%;
+    font-size: 1rem;
     text-transform: uppercase;
     font-family: 'Aldrich', 'Verdana', sans-serif;
     text-decoration: none;
 }
-.button-right{
-    float:right;
+
+.button-right {
+    float: right;
 }
-.button-left{
-    float:left;
+
+.button-left {
+    float: left;
 }
-.button-class:visited{
-    color:white;
+
+.button-class:visited {
+    color: white;
 }
-.button-class:hover{
-    background-color:rgba(255,255,255,1);
-    color:black;
+
+.button-class:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color: black;
 }

@@ -3,7 +3,7 @@ header {
     background-size: cover;
     height: 100vh;
     padding-top: 1px;
-    background-position-y: 53%;
+    background-position-y: 43%;
     position: relative;
     background-attachment: fixed;
     z-index: 1;
@@ -13,6 +13,12 @@ header>div h1 {
     font-size: 4rem;
     color: white;
     margin-bottom: 0;
+}
+
+header>div h2 {
+    font-size: 1rem;
+    color: white;
+
 }
 
 header>div {
@@ -26,12 +32,13 @@ header>div p {
     margin-top: 0;
     font-size: 1rem;
 }
+
 #kennedy-box {
     background-color: black;
     height: 80vh;
     overflow: hidden;
     position: relative;
-    
+
 }
 
 #kennedy-video {
@@ -53,10 +60,11 @@ header>div p {
     border-radius: 10px;
     padding: 25px;
     transition: 1s;
-    
+
 
 }
-#kennedy-box>div p{
+
+#kennedy-box>div p {
     line-height: 1.5rem;
 }
 
@@ -69,9 +77,11 @@ header>div p {
     height: 100vh;
     background-repeat: no-repeat;
 }
+
 #kennedy-box>div:hover {
     background-color: rgba(0, 0, 0, .8);
 }
+
 #mission-statement>div {
     width: 30%;
     margin: 15% 0 0 7%;
@@ -80,13 +90,16 @@ header>div p {
     padding: 25px;
     transition: 1s;
 }
-#mission-statement>div p{
+
+#mission-statement>div p {
     line-height: 1.5rem;
 }
+
 #mission-statement>div:hover {
     background-color: rgba(0, 0, 0, .8);
 
 }
+
 #launch-schedule {
     padding-top: 1px;
     background-image: url("../images/launch.jpg");
@@ -96,20 +109,22 @@ header>div p {
     height: 100vh;
     background-repeat: no-repeat;
 }
-#launch-schedule>div{
-      width: 30%;
+
+#launch-schedule>div {
+    width: 30%;
     margin: 15% 0 0 7%;
     background-color: rgba(0, 0, 0, 0);
     border-radius: 10px;
     padding: 25px;
     transition: 1s;
 }
-#launch-countdown{
-    position:absolute;
-    right:5%;
-    bottom:8%;
-    font-family: 'Aldrich','Verdana',sans-serif;
+
+#launch-countdown {
+    position: absolute;
+    right: 5%;
+    bottom: 8%;
+    font-family: 'Aldrich', 'Verdana', sans-serif;
     color: white;
-    text-align:right;
-   
+    text-align: right;
+
 }
