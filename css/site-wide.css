@@ -33,6 +33,7 @@ nav a {
     transition: .5s;
     border-radius: 5px;
     vertical-align: sub;
+    font-family:'Aldrich', 'Verdana', sans-serif;
 }
 
 nav a:hover {
@@ -73,18 +74,48 @@ h5 {
 }
 
 footer {
+    font-family:'Aldrich', 'Verdana', sans-serif;
     width: 100%;
     text-align: center;
-    height: 200px;
     background-color: black;
-    color: white;
+    color: rgb(152, 152, 152);
+    padding:10px 0;
+    font-size:.8rem;
+    text-transform: uppercase;
 
 }
-
-#footer-socials {
-    padding: 50px;
+footer a{
+    text-decoration: none;
+    color: rgb(152, 152, 152);
+}
+footer a:hover{
+    text-decoration: underline;
+}
+footer li{
+    list-style: none;
+    display:inline;
+    margin:0 .5vw;
+}
+#footer-content{
+    display:flex;
+    margin:10px;
+}
+#footer-content>div{
+    width:33%;
+}
+#social-links-holder{
+    text-align:left;
+    padding-left:10px;
+}
+#social-links-holder>img{
+    vertical-align: middle;
+    margin:0 5px;
 }
 
+#copyright-holder{
+    text-align:right;
+    padding-right:10px;
+}
 .button-class {
     display: block;
     padding: 15px;
