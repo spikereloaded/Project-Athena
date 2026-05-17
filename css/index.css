@@ -78,10 +78,6 @@ header>div p {
     background-repeat: no-repeat;
 }
 
-#kennedy-box>div:hover {
-    background-color: rgba(0, 0, 0, .8);
-}
-
 #mission-statement>div {
     width: 30%;
     margin: 15% 0 0 7%;
@@ -91,16 +87,19 @@ header>div p {
     transition: 1s;
 }
 
-#mission-statement>div p {
+#mission-statement>div p,
+#sagan-quote>div p {
     line-height: 1.5rem;
 }
 
-#mission-statement>div:hover {
+#mission-statement>div:hover,
+#kennedy-box>div:hover,
+#sagan-quote>div:hover {
     background-color: rgba(0, 0, 0, .8);
 
 }
 
-#launch-schedule {
+#sagan-quote {
     padding-top: 1px;
     background-image: url("../images/launch.jpg");
     background-color: black;
@@ -110,7 +109,7 @@ header>div p {
     background-repeat: no-repeat;
 }
 
-#launch-schedule>div {
+#sagan-quote>div {
     width: 30%;
     margin: 15% 0 0 7%;
     background-color: rgba(0, 0, 0, 0);
@@ -125,9 +124,20 @@ header>div p {
     width: 50%;
     text-align: center;
     padding: 0 15px;
-    font-size:.7rem;
+    font-size: .7rem;
+    line-height: 1.2rem;
 
 }
+
 #launch-countdown #countdown-text {
-    font-size:1rem;
+    font-size: 1rem;
+}
+.picture-attribute{
+    position:absolute;
+    right:0;
+    bottom:0;
+    z-index:2;
+    text-align:right;
+    width:30px;
+
 }

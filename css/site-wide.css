@@ -2,6 +2,7 @@ body {
     margin: 0px;
     padding: 0px;
     min-height: 100vh;
+    background-color:black;
 }
 
 p {
@@ -71,6 +72,7 @@ h4,
 h5 {
     font-family: 'Aldrich', 'Verdana', sans-serif;
     text-transform: uppercase;
+    color:white;
 }
 
 footer {
@@ -157,4 +159,13 @@ footer li {
 .button-class:hover {
     background-color: rgba(255, 255, 255, 1);
     color: black;
+}
+blockquote {
+    font-family: 'Work Sans', 'Verdana', sans-serif;
+    font-size: 1rem;
+}
+blockquote>footer{
+    background:none;
+    text-align: right;
+    color:white;
 }
