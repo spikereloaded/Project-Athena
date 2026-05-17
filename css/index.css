@@ -120,11 +120,14 @@ header>div p {
 }
 
 #launch-countdown {
-    position: absolute;
-    right: 5%;
-    bottom: 8%;
     font-family: 'Aldrich', 'Verdana', sans-serif;
     color: white;
-    text-align: right;
+    width: 50%;
+    text-align: center;
+    padding: 0 15px;
+    font-size:.7rem;
 
+}
+#launch-countdown #countdown-text {
+    font-size:1rem;
 }
