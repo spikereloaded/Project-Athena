@@ -4,7 +4,7 @@
 <head>
     <title>Project Athena: Contact</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width:device-width,initial-scale:1.0">
+    <meta name="viewport" content="width:device-width,initial-scale=1.0">
 
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/site-wide.css">
@@ -22,7 +22,7 @@
         <h1>Athena</h1>
         <div id="navigation">
             <ul>
-                <li><a href="index.html">Home</a></li>4∏
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="#contact-top">Contact</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
@@ -31,19 +31,49 @@
         </div>
     </nav>
     <header id="contact-top">
-        <div>
+        <div id="header-title">
             <h1>Get in touch.</h1>
+            <p>Have something to ask or want to pick the brains of our experts? <br>
+                Fill out the form below and we'll get back to you within 24 hours.</p>
         </div>
     </header>
     <main>
         <section id="contact-form-section">
-            <form id="contact-form">
-                <input type="email" name="email" placeholder="Email Address">
-                <input type="text" name="name" placeholder="Name">
-                <textarea name="contact-content" placeholder="What would you like to say?"></textarea>
+            <form>
+                <input type="email" name="email" placeholder="Email Address" required aria-required="true">
+                <input type="text" name="name" placeholder="Name" required aria-required="true">
+                <textarea name="contact-content" placeholder="What would you like to say?" required aria-required="true"></textarea>
+                <input type="submit" value="Send">
             </form>
         </section>
     </main>
+
+    <footer>
+
+
+        <div id="footer-content">
+            <div id="social-links-holder">
+                <a href="https://www.x.com" target="_blank"><img id="x-logo" src="images/social-logos/x-logo.svg"
+                        width="20px"></a>
+                <a href="https://www.instagram.com" target="_blank"><img id="instagram-logo"
+                        src="images/social-logos/instagram-logo.svg" width="30px"></a>
+
+            </div>
+            <div id="footer-links">
+                <ul>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <div id="copyright-holder">
+                <p>©Project Athena 2026</p>
+            </div>
+
+
+
+        </div>
+
+    </footer>
 </body>
 
 </html>

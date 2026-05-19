@@ -21,7 +21,7 @@ header>div h2 {
 
 }
 
-header>div {
+header>#header-title {
     position: absolute;
     left: 5%;
     bottom: 20%;
@@ -76,9 +76,10 @@ header>div p {
     color: white;
     height: 100vh;
     background-repeat: no-repeat;
+    position: relative;
 }
 
-#mission-statement>div {
+#mission-statement-title {
     width: 30%;
     margin: 15% 0 0 7%;
     background-color: rgba(0, 0, 0, 0);
@@ -87,14 +88,14 @@ header>div p {
     transition: 1s;
 }
 
-#mission-statement>div p,
-#sagan-quote>div p {
+#mission-statement>#mission-statement-title p,
+#sagan-quote>#sagan-quote-title p {
     line-height: 1.5rem;
 }
 
-#mission-statement>div:hover,
-#kennedy-box>div:hover,
-#sagan-quote>div:hover {
+#mission-statement>#mission-statement-title:hover,
+#kennedy-box>#kennedy-box-title:hover,
+#sagan-quote>#sagan-quote-title:hover {
     background-color: rgba(0, 0, 0, .8);
 
 }
@@ -109,7 +110,7 @@ header>div p {
     background-repeat: no-repeat;
 }
 
-#sagan-quote>div {
+#sagan-quote>#sagan-quote-title {
     width: 30%;
     margin: 15% 0 0 7%;
     background-color: rgba(0, 0, 0, 0);
@@ -134,10 +135,35 @@ header>div p {
 }
 .picture-attribute{
     position:absolute;
-    right:0;
-    bottom:0;
+    right:2%;
+    bottom:2%;
     z-index:2;
-    text-align:right;
-    width:30px;
 
+}
+.picture-attribute a {
+    color: white;
+    font-size: .7rem;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    header {
+        background-position-x:47%;
+    }
+    #mission-statement{
+        padding:10% 0;
+        height:unset;
+    }
+    #mission-statement-title {
+        margin:20% 5%;
+        width:80%;
+        text-align:center;
+        padding:20px;
+        font-size:large;
+        background-color: rgba(0, 0, 0, .7);
+    }
 }

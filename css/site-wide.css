@@ -3,8 +3,13 @@ body {
     padding: 0px;
     min-height: 100vh;
     background-color:black;
+    color:white;
+    display:flex;
+    flex-direction:column;
 }
-
+main{
+    flex:1;
+}
 p {
     font-family: 'Aldrich', 'Verdana', sans-serif;
 }
@@ -19,6 +24,7 @@ nav {
     font-family: 'Aldrich', 'Verdana', sans-serif;
     text-transform: uppercase;
     padding-left: 20px;
+    max-height:50px;
 }
 
 nav>h1 {
@@ -43,7 +49,7 @@ nav a:hover {
 }
 
 #navigation {
-    width: 60%
+    width: 90%
 }
 
 #navigation>ul {
@@ -74,7 +80,9 @@ h5 {
     text-transform: uppercase;
     color:white;
 }
-
+#footer-buffer{
+    flex-grow:1;
+}
 footer {
     font-family: 'Aldrich', 'Verdana', sans-serif;
     width: 100%;
@@ -84,6 +92,7 @@ footer {
     padding: 10px 0;
     font-size: .8rem;
     text-transform: uppercase;
+
 
 }
 
@@ -104,13 +113,20 @@ footer li {
 
 #footer-content {
     display: flex;
+    flex-flow:row wrap;
+    justify-content: space-evenly;
+    align-items: center;
     margin: 10px;
+    gap:20px;
 }
 
 #footer-content>div {
-    width: 33%;
-}
+    width:30%;
 
+}
+#footer-links>ul{
+    padding: 0;
+}
 #social-links-holder {
     text-align: left;
     padding-left: 10px;
@@ -168,4 +184,16 @@ blockquote>footer{
     background:none;
     text-align: right;
     color:white;
+}
+
+input[type=text], input[type=email], textarea{
+    border-radius: 8px;
+    padding:10px;
+}
+
+@media only screen and (max-width: 600px) {
+    #footer-content>div{
+        width:100%;
+        text-align: center;
+    }
 }
