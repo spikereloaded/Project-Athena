@@ -1,169 +1,165 @@
 header {
-    background-image: url("../images/earthrise-large.jpg");
-    background-size: cover;
-    height: 100vh;
-    padding-top: 1px;
-    background-position-y: 43%;
-    position: relative;
-    background-attachment: fixed;
-    z-index: 1;
+  background-image: url("../images/earthrise-large.jpg");
+  background-size: cover;
+  height: 100vh;
+  padding-top: 1px;
+  background-position-y: 43%;
+  position: relative;
+  background-attachment: fixed;
+  z-index: 1;
 }
 
-header>div h1 {
-    font-size: 4rem;
-    color: white;
-    margin-bottom: 0;
+header > div h1 {
+  font-size: 4rem;
+  color: white;
+  margin-bottom: 0;
 }
 
-header>div h2 {
-    font-size: 1rem;
-    color: white;
-
+header > div h2 {
+  font-size: 1rem;
+  color: white;
 }
 
-header>#header-title {
-    position: absolute;
-    left: 5%;
-    bottom: 20%;
+header > #header-title {
+  position: absolute;
+  left: 5%;
+  bottom: 20%;
 }
 
-header>div p {
-    color: white;
-    margin-top: 0;
-    font-size: 1rem;
+header > div p {
+  color: white;
+  margin-top: 0;
+  font-size: 1rem;
 }
 
 #kennedy-box {
-    background-color: black;
-    height: 80vh;
-    overflow: hidden;
-    position: relative;
-
+  background-color: black;
+  height: 80vh;
+  overflow: hidden;
+  position: relative;
 }
 
 #kennedy-video {
-    min-width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    object-fit: cover;
+  min-width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  object-fit: cover;
 }
 
-#kennedy-box>div {
-    z-index: 2;
-    color: white;
-    position: relative;
-    width: 30%;
-    margin: 10% 0 0 60%;
-    background-color: rgba(0, 0, 0, 0);
-    border-radius: 10px;
-    padding: 25px;
-    transition: 1s;
-
-
+#kennedy-box > div {
+  z-index: 2;
+  color: white;
+  position: relative;
+  width: 30%;
+  margin: 10% 0 0 60%;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  padding: 25px;
+  transition: 1s;
 }
 
-#kennedy-box>div p {
-    line-height: 1.5rem;
+#kennedy-box > div p {
+  line-height: 1.5rem;
 }
 
 #mission-statement {
-    padding-top: 1px;
-    background-image: url("../images/lunar-surface.jpg");
-    background-color: black;
-    background-size: cover;
-    color: white;
-    height: 100vh;
-    background-repeat: no-repeat;
-    position: relative;
+  padding-top: 1px;
+  background-image: url("../images/lunar-surface.jpg");
+  background-color: black;
+  background-size: cover;
+  color: white;
+  height: 100vh;
+  background-repeat: no-repeat;
+  position: relative;
 }
 
 #mission-statement-title {
-    width: 30%;
-    margin: 15% 0 0 7%;
-    background-color: rgba(0, 0, 0, 0);
-    border-radius: 10px;
-    padding: 25px;
-    transition: 1s;
+  width: 30%;
+  margin: 15% 0 0 7%;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  padding: 25px;
+  transition: 1s;
 }
 
-#mission-statement>#mission-statement-title p,
-#sagan-quote>#sagan-quote-title p {
-    line-height: 1.5rem;
+#mission-statement > #mission-statement-title p,
+#sagan-quote > #sagan-quote-title p {
+  line-height: 1.5rem;
 }
 
-#mission-statement>#mission-statement-title:hover,
-#kennedy-box>#kennedy-box-title:hover,
-#sagan-quote>#sagan-quote-title:hover {
-    background-color: rgba(0, 0, 0, .8);
-
+#mission-statement > #mission-statement-title:hover,
+#kennedy-box > #kennedy-box-title:hover,
+#sagan-quote > #sagan-quote-title:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 #sagan-quote {
-    padding-top: 1px;
-    background-image: url("../images/launch.jpg");
-    background-color: black;
-    background-size: cover;
-    color: white;
-    height: 100vh;
-    background-repeat: no-repeat;
+  padding-top: 1px;
+  background-image: url("../images/launch.jpg");
+  background-color: black;
+  background-size: cover;
+  color: white;
+  height: 100vh;
+  background-repeat: no-repeat;
 }
 
-#sagan-quote>#sagan-quote-title {
-    width: 30%;
-    margin: 15% 0 0 7%;
-    background-color: rgba(0, 0, 0, 0);
-    border-radius: 10px;
-    padding: 25px;
-    transition: 1s;
+#sagan-quote > #sagan-quote-title {
+  width: 30%;
+  margin: 15% 0 0 7%;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  padding: 25px;
+  transition: 1s;
 }
 
 #launch-countdown {
-    font-family: 'Aldrich', 'Verdana', sans-serif;
-    color: white;
-    width: 50%;
-    text-align: center;
-    padding: 0 15px;
-    font-size: .7rem;
-    line-height: 1.2rem;
-
+  font-family: "Aldrich", "Verdana", sans-serif;
+  color: white;
+  width: 50%;
+  text-align: center;
+  padding: 0 15px;
+  font-size: 0.7rem;
+  line-height: 1.2rem;
 }
 
 #launch-countdown #countdown-text {
-    font-size: 1rem;
+  font-size: 1rem;
 }
-.picture-attribute{
-    position:absolute;
-    right:2%;
-    bottom:2%;
-    z-index:2;
 
+.picture-attribute {
+  position: absolute;
+  right: 2%;
+  bottom: 2%;
+  z-index: 2;
 }
+
 .picture-attribute a {
-    color: white;
-    font-size: .7rem;
-    text-decoration: none;
-    background-color: rgba(0, 0, 0, .5);
-    padding: 5px 10px;
-    border-radius: 5px;
+  color: white;
+  font-size: 0.7rem;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 5px;
 }
 
 @media only screen and (max-width: 600px) {
+  header {
+    background-position-x: 47%;
+  }
 
-    header {
-        background-position-x:47%;
-    }
-    #mission-statement{
-        padding:10% 0;
-        height:unset;
-    }
-    #mission-statement-title {
-        margin:20% 5%;
-        width:80%;
-        text-align:center;
-        padding:20px;
-        font-size:large;
-        background-color: rgba(0, 0, 0, .7);
-    }
+  #mission-statement {
+    padding: 10% 0;
+    height: unset;
+  }
+
+  #mission-statement-title {
+    margin: 20% 5%;
+    width: 80%;
+    text-align: center;
+    padding: 20px;
+    font-size: large;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
 }
