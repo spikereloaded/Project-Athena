@@ -11,7 +11,15 @@ header {
   justify-content: center;
   flex-direction: column;
 }
-
+#about-intro{
+    height:40vh;
+    padding:5%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    text-align: center;
+}
 #about-content-section{
     margin-top:100px;
     display:flex;
@@ -64,6 +72,18 @@ header {
     position: absolute;
     border:1px solid white;
     padding-left:35px;
+}
+.timeline-container>h2{
+    font-size: 3rem;
+    position: absolute;
+}
+.timeline-left-container>h2{
+    right:0;
+    transform: translateX(130%);
+}
+.timeline-right-container>h2{
+    left:0;
+    transform: translateX(-130%);
 }
 #line{
     margin-top:50px;
