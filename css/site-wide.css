@@ -196,4 +196,7 @@ input[type=text], input[type=email], textarea{
         width:100%;
         text-align: center;
     }
+     #footer-content{
+        gap:0;
+     }
 }
