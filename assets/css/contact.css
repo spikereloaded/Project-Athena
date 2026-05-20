@@ -8,24 +8,25 @@ header > p {
   line-height: 1.5rem;
 }
 
-#contact-form-section,
-#contact-success-section {
+form {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
   align-items: center;
   padding: 30px 0;
+  align-content: center;
+  gap: 20px;
+  width: 60%;
+}
+#contact-form-section {
+  display: flex;
+  justify-content: center;
 }
 
 #contact-success-section {
   margin-top: 50px;
   gap: 25px;
 }
-
-form {
-  width: 50%;
-}
-
 input[type="text"],
 input[type="email"],
 textarea {
