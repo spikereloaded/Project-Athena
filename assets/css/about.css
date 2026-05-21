@@ -1,197 +1,202 @@
-
 header {
   text-align: right;
   text-wrap: pretty;
   background: black url("../images/farside-moon.jpg") no-repeat center;
   background-position-x: 0;
-  background-size:contain;
-  height:80vh;
-  display:flex;
+  background-size: contain;
+  height: 80vh;
+  display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   flex-direction: row;
-  padding:0 5%;
+  padding: 0 5%;
 }
-header h1{
-    font-size:4rem;
-    margin-bottom:10px;
+header h1 {
+  font-size: 4rem;
+  margin-bottom: 10px;
 }
-#divider-div{
-    width:100%;
-    background-color:white;
-    height:20px;
+#divider-div {
+  width: 100%;
+  background-color: white;
+  height: 20px;
 }
-h2{
-    font-size: 2.5rem;
+h2 {
+  font-size: 2.5rem;
 }
-#founder-quote{
-    line-height:1.5rem;
-    font-style:italic;
+#founder-quote {
+  line-height: 1.5rem;
+  font-style: italic;
 }
-#founder-quote>span{
-    font-size:.8rem;
-    font-style: normal;
-    
+#founder-quote > span {
+  font-size: 0.8rem;
+  font-style: normal;
 }
-#about-intro{
-    padding:5%;
-    display:flex;
-    justify-content: center;
-    align-items:flex-start;
-    flex-direction: column;
-    gap:200px;
-
+#about-intro {
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 200px;
 }
-#mission{
-    display:flex;
-    flex-flow: row wrap;
-    width:100%;
-    justify-content: space-evenly;
+#mission {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: space-evenly;
 }
-.text-content{
-    padding:2%;
-    width:40%;
-
+.text-content {
+  padding: 2%;
+  width: 40%;
 }
-.text-content p{
-    line-height:1.5rem;
+.text-content p {
+  line-height: 1.5rem;
 }
 
-.image-content>img{
-    max-width:100%;
-    border-radius:0 90px 90px 0;
+.image-content > img {
+  max-width: 100%;
+  border-radius: 0 90px 90px 0;
 }
-.image-content{
-    width:700px;
+.image-content {
+  width: 700px;
 }
-#about-content-section{
-    margin-top:100px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    flex-flow:column wrap;
-
+#about-content-section {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
 }
-#about-content-section>p{
-    text-align: center;
-    line-height:1.5rem;
+#about-content-section > p {
+  text-align: center;
+  line-height: 1.5rem;
 }
 .blip p {
-    transform: translateY(2px);
+  transform: translateY(2px);
 }
-.blip{
-    width: 50px;
-    height: 50px;
-    background-color: #000000;
-    border-radius: 50%;
-    position:absolute;
-    display:flex;
-    top:50%;
-    border: 2px solid white;
-    text-align:center;
-    justify-content: center;
-    align-content: center;
-    flex-direction:column;
-    transition: .3s;
-    text-transform: uppercase;
-    z-index:1;
+.blip {
+  width: 50px;
+  height: 50px;
+  background-color: #000000;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  top: 50%;
+  border: 2px solid white;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  transition: 0.3s;
+  text-transform: uppercase;
+  z-index: 1;
 }
-.blip:hover{
-    width:70px;
-    height:70px;
+.blip:hover {
+  width: 70px;
+  height: 70px;
 }
-.timeline-container:hover .blip{
-    border: 3px solid red;
+.timeline-container:hover .blip {
+  border: 3px solid red;
 }
-.timeline-left-container{
-    transform: translateX(-100%);
+.timeline-left-container {
+  transform: translateX(-100%);
+  left:100%;
 }
-.timeline-container>{
-    margin:0;
+.timeline-container > {
+  margin: 0;
 }
-.timeline-container{
-    display:flex;
-    align-items: center;
-    flex-direction: row;
-    width: 40vw;
-    height: 150px;
-    position: absolute;
-    border:1px solid white;
-    padding-left:35px;
-    z-index:0;
+.timeline-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 40vw;
+  height: 150px;
+  position: absolute;
+  border: 1px solid white;
+  padding-left: 35px;
+  z-index: 0;
 }
-.timeline-container>h2{
-    font-size: 3rem;
-    position: absolute;
+.timeline-container > h2 {
+  font-size: 3rem;
+  position: absolute;
 }
-.timeline-left-container>h2{
-    right:0;
-    transform: translateX(130%);
+.timeline-left-container > h2 {
+  right: 0;
+  transform: translateX(130%);
 }
-.timeline-right-container>h2{
-    left:0;
-    transform: translateX(-130%);
+.timeline-right-container > h2 {
+  left: 0;
+  transform: translateX(-130%);
 }
-#line{
-    margin-top:50px;
-    position:relative;
-    height:900px;
-    width: 2px;
-    background-color: white;
-    
+#line {
+  margin-top: 50px;
+  position: relative;
+  height: 900px;
+  width: 2px;
+  background-color: white;
 }
-#start-blip{
-    width: 50px;
-    height: 50px;
-    background-color: #ffffff;
-    border-radius: 50%;
-    position:absolute;
-    top:0;
-    border: 2px solid white;
-    transform:translateX(-50%);
+#start-blip {
+  width: 50px;
+  height: 50px;
+  left:50%;
+  transform: translateX(-50%);
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  border: 2px solid white;
+  
 }
 
-#start-blip:hover{
-    background-color: black;
+#start-blip:hover {
+  background-color: black;
+}
+.left-blip {
+  transform: translate(-50%, -50%);
+  left: 0;
+}
+.right-blip {
+  transform: translate(50%, -50%);
+  right: 0;
+}
+#blip-one {
+  top: 100px;
+  background:
+    linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
+    url("../images/timeline-one.png");
+  background-position-y: 45%;
+}
+#blip-two {
+  top: 300px;
+}
+#blip-three {
+  top: 500px;
+}
+.moving-blip {
+  height: 26px;
+  width: 26px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
 
-}
-.left-blip{
-    transform:translate(-50%,-50%);
-    left:0;
-}
-.right-blip{
-     transform:translate(50%,-50%);
-     right:0;
-}
-#blip-one{
-    top:100px;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6) ), url("../images/timeline-one.png");
-    background-position-y: 45%;
-}
-#blip-two{
-    top:300px;
-}
-#blip-three{
-    top:500px;
-}
-.moving-blip{
-    height:25px;
-    width:25px;
-    background:white;
-    border-radius:50%;
-    position: absolute;
-    top:100px;
-    z-index:-1;
-    transform:translateX(-50%);
-    animation-name: moveBlip;
-    animation-duration: 7s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
+  animation-name: moveBlip;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
 }
 @keyframes moveBlip {
-    0% {top:0; }
-    90%{top:900px; opacity:1.0;}
-    100%{top:900px;opacity: 0;}
-    
-
+  0% {
+    top: 0;
+  }
+  90% {
+    top: 900px;
+    opacity: 1;
+  }
+  100% {
+    top: 900px;
+    opacity: 0;
+  }
 }
