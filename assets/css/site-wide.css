@@ -92,6 +92,7 @@ footer {
   padding: 10px 0;
   font-size: 0.8rem;
   text-transform: uppercase;
+  z-index:2;
 }
 
 footer a {

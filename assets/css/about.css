@@ -38,6 +38,9 @@ h2 {
   align-items: flex-start;
   flex-direction: column;
   gap: 200px;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-timeline: view(block 40% 0%);
 }
 #mission {
   display: flex;
@@ -66,6 +69,9 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
+    animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-timeline: view(block 40% 0%);
 }
 #about-content-section > p {
   text-align: center;
@@ -180,7 +186,6 @@ h2 {
   border-radius: 50%;
   position: absolute;
   z-index: -1;
-
   animation-name: moveBlip;
   animation-duration: 7s;
   animation-iteration-count: infinite;
@@ -196,6 +201,9 @@ h2 {
   margin: auto;
   padding: 20px;
   width: 90px;
+  animation-name: slideArrow;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
 }
 #scroll-arrow>img{
     width:80px;
@@ -212,4 +220,13 @@ h2 {
     top: 900px;
     opacity: 0;
   }
+}
+@keyframes slideArrow {
+    0% {bottom:30px;opacity:0;}
+    50%{opacity:1.0;}
+    100%{bottom:0;opacity:0}
+}
+@keyframes fadeIn {
+    from {opacity:0;}
+    to{opacity:1.0;}
 }

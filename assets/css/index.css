@@ -152,10 +152,27 @@ header > div p {
   margin: auto;
   padding: 20px;
   width: 90px;
+  animation-name: slideArrow;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
 }
-#scroll-arrow>img{
-    width:80px;
+#scroll-arrow > img {
+  width: 80px;
 }
+@keyframes slideArrow {
+  0% {
+    bottom: 30px;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   header {
     background-position-x: 47%;
