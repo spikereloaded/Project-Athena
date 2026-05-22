@@ -41,6 +41,7 @@ h2 {
   animation-name: fadeIn;
   animation-duration: 1s;
   animation-timeline: view(block 40% 0%);
+  /* height:100vh */
 }
 #mission {
   display: flex;
@@ -204,6 +205,7 @@ h2 {
   animation-name: slideArrow;
   animation-iteration-count: infinite;
   animation-duration: 2s;
+  cursor: pointer;
 }
 #scroll-arrow>img{
     width:80px;

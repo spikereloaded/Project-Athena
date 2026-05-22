@@ -40,8 +40,8 @@
     <main>
         <header id="home-top">
             <div id="header-title">
-                <h1>Project Athena</h1>
-                <h2>Prviately funded Aerospace engineers, returning to where it all began.</h2>
+                <h1>Athena</h1>
+                <h3>Prviately funded Aerospace engineers, returning to where it all began.</h3>
                 <p>
                     <a class="button-class " href="launch.html" target="_blank">Watch Launch</a>
                 </p>
@@ -50,7 +50,7 @@
             <div class="picture-attribute">
                 <a href="" target="_blank">Picture Attribute</a>
             </div>
-             <div id="scroll-arrow"><img src="assets/images/scroll-arrow.png"> </div>
+             <div id="scroll-arrow" onclick="scrollToPanel('mission-statement')"><img src="assets/images/scroll-arrow.png"> </div>
         </header>
         <section id="mission-statement">
             <div id="mission-statement-title">
@@ -74,10 +74,11 @@
             <div class="picture-attribute">
                 <a href="" target="_blank">Picture Attribute</a>
             </div>
+            <div id="scroll-arrow" onclick="scrollToPanel('kennedy-box')"><img src="assets/images/scroll-arrow.png"> </div>
         </section>
         <section id="kennedy-box">
-            <div>
-                <h2>We're here to meet the challenge set in 1961.</h2>
+            <div id="kennedy-reference">
+                <h2>Meeting the challenge set in 1961.</h2>
                 <p>
                     When Kennedy set the goal of reaching the moon by the end
                     of the decade, many thought his confidence was misguided; man was
@@ -98,22 +99,17 @@
             <video muted loop id="kennedy-video">
                 <source src="assets/videos/kennedy.mp4" type="video/mp4">
             </video>
-           
+           <div id="scroll-arrow" onclick="scrollToPanel('sagan-quote')"><img src="assets/images/scroll-arrow.png"> </div>
         </section>
         <section id="sagan-quote">
             <div id="sagan-quote-title">
-                <h2>Working towards expanding the fronteir of tomorrow.</h2>
+                <h2>Expanding the frontier of tomorrow, Today.</h2>
                 <p>
                 <blockquote>
                     "Look again at that dot. That's here. That's home. That's us.
                     On it everyone you love, everyone you know, everyone you ever
-                    heard of, every human being who ever was, lived out their lives.
-                    The aggregate of our joy and suffering, thousands of confident religions,
-                    ideologies, and economic doctrines, every hunter and forager, every hero and
-                    coward, every creator and destroyer of civilization, every king and peasant,
-                    every young couple in love, every mother and father, hopeful child, inventor
-                    and explorer, every teacher of morals, every corrupt politician, every "superstar,"
-                    every "supreme leader," every saint and sinner in the history of our species
+                    heard of, every human being who ever was, lived out their
+                    lives....every saint and sinner in the history of our species
                     lived there--on a mote of dust suspended in a sunbeam."
                     <footer>— <cite>Carl Sagan, Pale Blue Dot, 1994.</cite></footer>
                 </blockquote>

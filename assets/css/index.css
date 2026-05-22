@@ -4,26 +4,31 @@ header {
   height: 100vh;
   padding-top: 1px;
   background-position-y: 43%;
-  position: relative;
   background-attachment: fixed;
   z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 0 5%;
 }
 
-header > div h1 {
-  font-size: 4rem;
+#header-title > h1 {
+  font-size: 6rem;
   color: white;
   margin-bottom: 0;
 }
 
-header > div h2 {
-  font-size: 1rem;
-  color: white;
+#header-title > h2 {
+    color: white;
 }
 
-header > #header-title {
-  position: absolute;
-  left: 5%;
-  bottom: 20%;
+#header-title {
+  text-align: center;
+  padding-top: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 header > div p {
@@ -34,34 +39,37 @@ header > div p {
 
 #kennedy-box {
   background-color: black;
-  height: 80vh;
+  height: 100vh;
   overflow: hidden;
   position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 #kennedy-video {
-  min-width: 100%;
   position: absolute;
+  min-height: 100%;
   top: 0;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 1;
   object-fit: cover;
 }
 
-#kennedy-box > div {
+#kennedy-reference {
   z-index: 2;
   color: white;
   position: relative;
-  width: 30%;
-  margin: 10% 0 0 60%;
-  background-color: rgba(0, 0, 0, 0);
+  width: 50%;
   border-radius: 10px;
   padding: 25px;
   transition: 1s;
-}
-
-#kennedy-box > div p {
   line-height: 1.5rem;
+background-color: rgba(0, 0, 0, .7);
+  border: 1px solid rgba(0, 0, 0, 1);
+  text-align: center;
 }
 
 #mission-statement {
@@ -73,12 +81,17 @@ header > div p {
   height: 100vh;
   background-repeat: no-repeat;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #mission-statement-title {
-  width: 30%;
-  margin: 15% 0 0 7%;
-  background-color: rgba(0, 0, 0, 0);
+    width:50%;
+ text-align: center;
+  background-color: rgba(0, 0, 0, .7);
+  border: 1px solid rgba(0, 0, 0, 1);
   border-radius: 10px;
   padding: 25px;
   transition: 1s;
@@ -87,12 +100,13 @@ header > div p {
 #mission-statement > #mission-statement-title p,
 #sagan-quote > #sagan-quote-title p {
   line-height: 1.5rem;
+  font-size:1.2rem;
 }
 
 #mission-statement > #mission-statement-title:hover,
-#kennedy-box > #kennedy-box-title:hover,
+#kennedy-box > #kennedy-reference:hover,
 #sagan-quote > #sagan-quote-title:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.8);
 }
 
 #sagan-quote {
@@ -101,17 +115,22 @@ header > div p {
   background-color: black;
   background-size: cover;
   color: white;
-  height: 100vh;
+  height: 88vh;
   background-repeat: no-repeat;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-#sagan-quote > #sagan-quote-title {
-  width: 30%;
-  margin: 15% 0 0 7%;
-  background-color: rgba(0, 0, 0, 0);
+#sagan-quote-title {
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0);
   border-radius: 10px;
   padding: 25px;
   transition: 1s;
+  text-align: center;
 }
 
 #launch-countdown {
@@ -155,9 +174,14 @@ header > div p {
   animation-name: slideArrow;
   animation-iteration-count: infinite;
   animation-duration: 2s;
+  cursor: pointer;
+  z-index: 2;
 }
 #scroll-arrow > img {
   width: 80px;
+}
+.scroll-up {
+  transform: rotate(180deg);
 }
 @keyframes slideArrow {
   0% {
