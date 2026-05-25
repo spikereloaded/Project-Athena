@@ -22,7 +22,9 @@ p {
   display:none;
 }
 .visible-block {
-  display:block
+  display:block;
+
+  transition:1s;
 }
 nav {
   background-color: black;
@@ -35,13 +37,12 @@ nav {
   z-index: 3;
   font-family: "Aldrich", "Verdana", sans-serif;
   text-transform: uppercase;
-  padding-left: 20px;
+  padding: 10px 20px;
   max-height: 50px;
 }
 
 nav > h1 {
-  margin-bottom: 0px;
-  margin-top: 15px;
+ 
 }
 
 nav a {
@@ -72,7 +73,7 @@ nav a {
 nav li {
   padding:10px 0;
   text-align:center;
-  border:1px solid rgb(124, 124, 124);
+  border-bottom:1px solid rgb(124, 124, 124);
   
 }
 nav li:hover {
@@ -80,7 +81,6 @@ nav li:hover {
   color: black;
 }
 #mobile-nav-toggle{
-  padding:20px;
   font-size: 200%;
 }
 #site-logo > img {
