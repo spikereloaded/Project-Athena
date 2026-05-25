@@ -41,7 +41,7 @@ h2 {
   animation-name: fadeIn;
   animation-duration: 1s;
   animation-timeline: view(block 40% 0%);
-  /* height:100vh */
+  height:100vh;
 }
 #mission {
   display: flex;
