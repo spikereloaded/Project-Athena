@@ -15,7 +15,7 @@
     <meta name="author" content="Project Athena">
     <meta name="keywords" content="">
     <meta name="description" content="">
-
+    <script src="https://kit.fontawesome.com/6f68c772bb.js" crossorigin="anonymous" defer></script>
     <script src="assets/js/index.js" defer></script>
     <script src="assets/js/site-wide.js" defer></script>
     <!-- image link https://images.nasa.gov/details/KSC-20230530-PH-RKL02_0004-->
@@ -24,7 +24,7 @@
 <body>
     <nav>
         <h1>Athena</h1>
-        <div id="navigation">
+        <div id="navigation" class="hidden">
             <ul>
                 <li><a href="#home-top">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -35,7 +35,9 @@
             </ul>
 
         </div>
-
+        <div id="mobile-nav-toggle">
+            <i class="fa-solid fa-bars" onclick="toggleNav()"></i>    
+        </div>
     </nav>
     <main>
         <header id="home-top">

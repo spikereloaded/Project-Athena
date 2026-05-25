@@ -14,7 +14,7 @@ header {
 }
 
 #header-title > h1 {
-  font-size: 6rem;
+  font-size: 400%;
   color: white;
   margin-bottom: 0;
 }

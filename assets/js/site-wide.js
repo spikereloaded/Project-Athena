@@ -1,4 +1,7 @@
 const arrow = document.getElementById("scroll-arrow");
+const burger = document.getElementById("mobile-nav-toggle");
+const navigationMenu = document.getElementById("navigation");
+
 
 //checks to see if the scroll arrow is visible in the viewport currently
 //if the scroll arrow moves out of the viewport, it will hide it
@@ -29,4 +32,15 @@ function scrollToPanel(panelId){
     let panelLocation = panelElement.getBoundingClientRect();
     console.log(panelLocation.y);
     window.scrollBy({top:panelLocation.top, behavior: "smooth"} );
+}
+
+//function to toggle visiblity of mobile first navigation menu
+function toggleNav(){
+  if(navigationMenu.classList.contains("hidden")){
+    navigationMenu.classList.remove("hidden");
+    navigationMenu.classList.add("visible-block");
+  }else{
+    navigationMenu.classList.remove("visible-block");
+    navigationMenu.classList.add("hidden");
+  }
 }
