@@ -23,7 +23,9 @@
 
 <body>
     <nav>
-        <a href="index.html"><h1>Athena</h1></a>
+        <a href="index.html">
+            <h1>Athena</h1>
+        </a>
         <div id="navigation" style="display:none;">
             <ul>
                 <li><a class="active-link" href="#home-top">Home</a></li>
@@ -36,23 +38,26 @@
 
         </div>
         <div id="mobile-nav-toggle">
-            <i class="fa-solid fa-bars" onclick="toggleNav()"></i>    
+            <i class="fa-solid fa-bars" onclick="toggleNav()"></i>
         </div>
     </nav>
     <main>
         <header id="home-top">
             <div id="header-title">
-                <h1>Athena</h1>
-                <h3>Prviately funded Aerospace engineers, returning to where it all began.</h3>
-                <p>
-                    <a class="button-class " href="launch.html" target="_blank">Watch Launch</a>
+                <h1>We're on a mission.</h1>
+                <p>The moon is our closest neighbour, yet we know so little about it. </p>
+                <p>ATHENA is here to change that.</p>
+
+                <!-- <p>
+                    <a class="button-class " href="launch.html" target="_blank">Recent Launches</a>
                 </p>
-                <div id="launch-countdown">Next Launch:<br><span id="countdown-text">Calculating...</span></div>
+                <div id="launch-countdown">Next Launch:<br><span id="countdown-text">Calculating...</span></div> -->
             </div>
-             <div id="scroll-arrow" onclick="scrollToPanel('mission-statement')"><img src="assets/images/scroll-arrow.png"> </div>
+            <div id="scroll-arrow" onclick="scrollToPanel('mission-statement')"><img
+                    src="assets/images/scroll-arrow.png"> </div>
         </header>
         <section id="mission-statement">
-            <div id="mission-statement-title">
+            <div id="mission-statement-content">
                 <h2>Taking the next step, for all mankind.</h2>
                 <p>
                     Since 1972, the world has waited for the next mission to explore the
@@ -70,7 +75,8 @@
                     and innovation experts to get boots in the dust within the next 5 years.
                 </p>
             </div>
-            <div id="scroll-arrow" onclick="scrollToPanel('kennedy-box')"><img src="assets/images/scroll-arrow.png"> </div>
+            <div id="scroll-arrow" onclick="scrollToPanel('kennedy-box')"><img src="assets/images/scroll-arrow.png">
+            </div>
         </section>
         <section id="kennedy-box">
             <div id="kennedy-reference">
@@ -95,7 +101,8 @@
             <video muted loop id="kennedy-video">
                 <source src="assets/videos/kennedy.mp4" type="video/mp4">
             </video>
-           <div id="scroll-arrow" onclick="scrollToPanel('sagan-quote')"><img src="assets/images/scroll-arrow.png"> </div>
+            <div id="scroll-arrow" onclick="scrollToPanel('sagan-quote')"><img src="assets/images/scroll-arrow.png">
+            </div>
         </section>
         <section id="sagan-quote">
             <div id="sagan-quote-title">
@@ -115,7 +122,7 @@
                     Athena's team to tackle the emerging technical problems of tomorrow.
                 </p>
             </div>
-           
+
         </section>
     </main>
     <footer>
