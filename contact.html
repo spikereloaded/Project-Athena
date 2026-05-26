@@ -4,7 +4,7 @@
 <head>
     <title>Project Athena: Contact</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width:device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
     <link rel="stylesheet" href="assets/css/contact.css">
     <link rel="stylesheet" href="assets/css/site-wide.css">
@@ -13,22 +13,27 @@
     <meta name="author" content="Project Athena">
     <meta name="keywords" content="">
     <meta name="description" content="">
-
+    <script src="https://kit.fontawesome.com/6f68c772bb.js" crossorigin="anonymous" defer></script>
+    <script src="assets/js/site-wide.js" defer></script>
 
 </head>
 
 <body>
     <nav>
-        <h1>Athena</h1>
-        <div id="navigation">
+        <a href="index.html"><h1>Athena</h1></a>
+        <div id="navigation" style="display:none;">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="join.html">Join</a></li>
-                <li><a href="#contact-top">Contact</a></li>
+                <li><a class="active-link" href="#contact-top">Contact</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="launch.html">Launch</a></li>
             </ul>
+
+        </div>
+        <div id="mobile-nav-toggle">
+            <i class="fa-solid fa-bars" onclick="toggleNav()"></i>    
         </div>
     </nav>
     <header id="contact-top">

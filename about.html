@@ -3,7 +3,7 @@
   <head>
     <title>Project Athena: About</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width:device-width,initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
 
     <link rel="stylesheet" href="assets/css/about.css" />
     <link rel="stylesheet" href="assets/css/site-wide.css" />
@@ -11,28 +11,33 @@
       href="https://fonts.googleapis.com/css2?family=Aldrich&family=Anta&family=Gugi&display=swap"
       rel="stylesheet"
     />
-    <script src="assets/js/site-wide.js" defer></script>
+    
 
     <meta name="author" content="Project Athena" />
     <meta name="keywords" content="" />
     <meta name="description" content="" />
-
+   <script src="https://kit.fontawesome.com/6f68c772bb.js" crossorigin="anonymous" defer></script>
+    <script src="assets/js/site-wide.js" defer></script>
     <!-- image link https://images.nasa.gov/details/art002e015228  https://unsplash.com/photos/person-pointing-white-paper-on-wall-7tXA8xwe4W4-->
   </head>
 
   <body>
     <nav>
-      <h1>Athena</h1>
-      <div id="navigation">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#about-top">About</a></li>
-          <li><a href="join.html">Join</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="launch.html">Launch</a></li>
-        </ul>
-      </div>
+        <a href="index.html"><h1>Athena</h1></a>
+        <div id="navigation" style="display:none;">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active-link" href="#about-top">About</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="launch.html">Launch</a></li>
+            </ul>
+
+        </div>
+        <div id="mobile-nav-toggle">
+            <i class="fa-solid fa-bars" onclick="toggleNav()"></i>    
+        </div>
     </nav>
     <header id="about-top">
       <div id="header-title">
