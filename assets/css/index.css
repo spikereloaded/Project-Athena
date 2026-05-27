@@ -1,10 +1,13 @@
 header {
   background-image: url("../images/large-moon.jpg");
+  background-color:black;
   background-size: cover;
-  height: 100vh;
+  /* small view port unit used to ensure that the hero image is visible and first panel 
+  is always visible when loading the page on mobile devices.  */
+  height: 100svh;
   padding-top: 1px;
   background-position: center;
-  /* background-attachment: fixed; */
+ 
   z-index: 1;
   display: flex;
   justify-content: center;
@@ -34,9 +37,10 @@ header {
   text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  height: 38vh;
+  align-items: flex-start;
+  margin-bottom:100px;
   width: 288px;
+  flex:1;
 }
 
 #header-title p {
@@ -80,12 +84,15 @@ header {
 
 #base-one-location>div,
 #base-two-location>div {
+  transform-origin: center;
   width: 30px;
   height: 30px;
   border-radius: 50%;
+  background:rgba(255,255,255,.3);
   border: 1px dashed white;
   animation: rotateLocator 12s infinite linear;
   transition: .8s;
+  
 }
 #base-one-location>p, #base-two-location>p {
   font-size: .5rem;
@@ -109,9 +116,12 @@ header {
 }
 
 
+
+
 #mission-statement {
   padding-top: 1px;
   background-image: url("../images/lunar-surface.jpg");
+  background-position: center;
   background-color: black;
   background-size: cover;
   color: white;
