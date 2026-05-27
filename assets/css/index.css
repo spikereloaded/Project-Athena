@@ -4,7 +4,7 @@ header {
   height: 100vh;
   padding-top: 1px;
   background-position: center;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   z-index: 1;
   display: flex;
   justify-content: center;
@@ -36,22 +36,78 @@ header {
   flex-direction: column;
   align-items: center;
   height: 38vh;
-  margin-bottom: 10%;
+  width: 288px;
 }
 
 #header-title p {
   color: white;
   text-align: left;
   font-size: .8rem;
-  width:100%;
-  margin-bottom:10px;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 #quote-author {
   font-size: .8rem;
   text-align: left;
-  ;
 }
+
+#base-location-container {
+  width: 200px;
+  position: absolute;
+  height: 200px;
+  bottom: 50%;
+}
+
+#base-one-location {
+  position: absolute;
+  top: 120px;
+  left: 50px;
+
+}
+
+#base-two-location {
+  position: absolute;
+  right: 40px;
+  top:50px;
+  text-align:right;
+}
+
+#base-one-location span, #base-two-location span {
+  font-size: .8rem;
+  font-style: italic;
+}
+
+#base-one-location>div,
+#base-two-location>div {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px dashed white;
+  animation: rotateLocator 12s infinite linear;
+  transition: .8s;
+}
+#base-one-location>p, #base-two-location>p {
+  font-size: .5rem;
+  position: absolute;
+  width: max-content;
+  margin-top: 8px;
+  background: #0000007d;
+  padding: 5px;
+  border-radius: 2px;
+  line-height:.8rem;
+}
+
+@keyframes rotateLocator {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
 
 #mission-statement {
   padding-top: 1px;
