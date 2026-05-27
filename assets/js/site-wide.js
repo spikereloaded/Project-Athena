@@ -9,12 +9,10 @@ mainContent.addEventListener("click",checkNavMenu);
 let screenWidth = screen.width;
 
 
-// function to scroll viewport to a specific panel
+// function to scroll viewport to a specific panel.
 function scrollToPanel(panelId){
     let panelElement = document.getElementById(panelId)
-    let panelLocation = panelElement.getBoundingClientRect();
-    console.log(panelLocation.y);
-    window.scrollBy({top:panelLocation.top, behavior: "smooth"} );
+    panelElement.scrollIntoView({block: "start", behavior: "smooth"} );
 }
 
 
@@ -26,14 +24,9 @@ function toggleNav(){
   }
 }
 
-window.addEventListener("scroll", () => {
-  if (window.scrollY >50 && navigationMenu.style.display == "block") {
-    console.log("shut menu");
-    navigationMenu.style.display = "none";
-  }
-});
 
-//closign the nav menu automatically when user has it open but clicks/presses outside of nav
+
+//closing the nav menu automatically when user has it open but clicks/presses outside of nav
 function checkNavMenu(){
   if(navigationMenu.style.display == "block"){
     navigationMenu.style.display = "none";
