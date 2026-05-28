@@ -1,13 +1,13 @@
 header {
   background-image: url("../images/large-moon.jpg");
-  background-color:black;
+  background-color: black;
   background-size: cover;
   /* small view port unit used to ensure that the hero image is visible and first panel 
   is always visible when loading the page on mobile devices.  */
   height: 100svh;
   padding-top: 1px;
   background-position: center;
- 
+
   z-index: 1;
   display: flex;
   justify-content: center;
@@ -32,16 +32,18 @@ header {
   font-size: .8rem;
 }
 
-#header-title{
+#header-title {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-bottom:100px;
+  margin-bottom: 100px;
   width: 288px;
-  flex:1;
+  flex: 1;
 }
 
-#header-title p , #mission-statement-title p{
+#header-title p,
+#mission-statement-content p,
+#kennedy-reference-content p {
   color: white;
   text-align: left;
   font-size: 100%;
@@ -71,11 +73,12 @@ header {
 #base-two-location {
   position: absolute;
   right: 40px;
-  top:50px;
-  text-align:right;
+  top: 50px;
+  text-align: right;
 }
 
-#base-one-location span, #base-two-location span {
+#base-one-location span,
+#base-two-location span {
   font-size: .8rem;
   font-style: italic;
 }
@@ -86,13 +89,15 @@ header {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background:rgba(255,255,255,.3);
+  background: rgba(255, 255, 255, .3);
   border: 1px dashed white;
   animation: rotateLocator 12s infinite linear;
   transition: .8s;
-  
+
 }
-#base-one-location>p, #base-two-location>p {
+
+#base-one-location>p,
+#base-two-location>p {
   font-size: .5rem;
   position: absolute;
   width: max-content;
@@ -100,7 +105,7 @@ header {
   background: #0000007d;
   padding: 5px;
   border-radius: 2px;
-  line-height:.8rem;
+  line-height: .8rem;
 }
 
 @keyframes rotateLocator {
@@ -113,27 +118,30 @@ header {
   }
 }
 
-#construction-image{
-  
-    max-width:100%;
-   
+#construction-image {
+
+  max-width: 100%;
+
 }
 
-.image-div{
-align-self: center;
-  width:100%;
-    z-index: 0;
-    margin-bottom: 20px;
+.image-div {
+  align-self: center;
+  width: 100%;
+  z-index: 0;
+  margin-bottom: 20px;
 }
-#mission-statement-title{
-  padding:20px;
+
+#mission-statement-content {
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-bottom:100px;
+  margin-bottom: 100px;
   width: fit-content;
-
+  background: #000000;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.46) 76%, rgba(0, 0, 0, 0) 100%);
 }
+
 #mission-statement {
   background-image: url("../images/moon-construction.jpg");
   background-position: center top;
@@ -147,18 +155,15 @@ align-self: center;
   flex-direction: column;
   align-items: flex-start;
   justify-content: end;
-  overflow:hidden;
+  overflow: hidden;
 }
 
 
-#mission-statement h2 {
+#mission-statement h2,
+#kennedy-reference-content h2 {
   font-size: 250%;
-  line-height:40px;
+  line-height: 40px;
 }
-
-
-
-
 
 #kennedy-box {
   background-color: black;
@@ -166,9 +171,9 @@ align-self: center;
   overflow: hidden;
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: end;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 
 #kennedy-video {
@@ -181,18 +186,62 @@ align-self: center;
   object-fit: cover;
 }
 
-#kennedy-reference {
+#kennedy-video-button-container {
   z-index: 2;
-  color: white;
-  position: relative;
-  width: 50%;
-  border-radius: 10px;
-  padding: 25px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: #000000;
   transition: 1s;
-  line-height: 1.5rem;
-  background-color: rgba(0, 0, 0, .7);
-  border: 1px solid rgba(0, 0, 0, 1);
+    background: linear-gradient(240deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.46) 76%, rgba(0, 0, 0, 0) 100%);
+
+}
+
+#video-controls {
+  z-index: 2;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top:20px;
+
+}
+
+#toggle-button {
+  padding: 15px;
+  font-size: 120%;
+  margin: 10px;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+.video-control-class {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0);
+  transition: 0.6s;
   text-align: center;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: "Aldrich", "Verdana", sans-serif;
+  text-decoration: none;
+  margin-bottom:10px;
+}
+
+#kennedy-reference-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 100px;
+
+  width: fit-content;
+  background: #000000;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.46) 76%, rgba(0, 0, 0, 0) 100%);
+  z-index: 2;
 }
 
 
@@ -252,10 +301,10 @@ align-self: center;
   position: absolute;
   bottom: 0;
   left: 50px;
-  
+
   margin: auto;
   padding: 20px 0;
-  
+
   animation-name: slideArrow;
   animation-iteration-count: infinite;
   animation-duration: 2s;
@@ -287,7 +336,7 @@ align-self: center;
   }
 }
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 400px) {
   #construction-image {
     max-width: 200%;
     margin-left: -50%;
