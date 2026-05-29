@@ -27,7 +27,7 @@
         <a href="index.html">
             <h1>Athena</h1>
         </a>
-        <div id="navigation" style="display:none;">
+        <div id="navigation">
             <ul>
                 <li><a class="active-link" href="#home-top">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -39,7 +39,7 @@
 
         </div>
         <div id="mobile-nav-toggle" aria-label="Toggle Navigation Menu">
-            <i class="fa-solid fa-bars" onclick="toggleNav()"></i>
+            <i class="fa-solid fa-bars"></i>
         </div>
     </nav>
     <main id="main-content-container">
@@ -71,7 +71,7 @@
                 </p>
                 <div id="launch-countdown">Next Launch:<br><span id="countdown-text">Calculating...</span></div> -->
             </div>
-            <div id="scroll-arrow" onclick="scrollToPanel('mission-statement')"><img
+            <div id="arrow-one" class="scroll-arrow" data-next-panel="mission-statement"><img
                     src="assets/images/scroll-arrow-opaque.png"> </div>
         </header>
         <section id="mission-statement">
@@ -84,7 +84,7 @@
                 </p>
             </div>
 
-            <div id="scroll-arrow" onclick="scrollToPanel('kennedy-box')"><img
+            <div id="arrow-two" class="scroll-arrow" data-next-panel="kennedy-box"><img
                     src="assets/images/scroll-arrow-opaque.png">
             </div>
         </section>
@@ -113,13 +113,13 @@
                 <source src="assets/videos/kennedy.mp4" type="video/mp4">
                 Your browser doesn't support the HTML5 video tag. Please update your browser or use an alternative.
             </video>
-            <div id="scroll-arrow" onclick="scrollToPanel('sagan-quote')"><img src="assets/images/scroll-arrow.png">
+            <div id="arrow-three" class="scroll-arrow" data-next-panel="sagan-quote"><img src="assets/images/scroll-arrow.png">
             </div>
         </section>
         <section id="sagan-quote">
             <div id="sagan-quote-title">
                 <h2>Expanding the frontier of tomorrow, Today.</h2>
-                <p>
+                
                 <blockquote>
                     "Look again at that dot. That's here. That's home. That's us.
                     On it everyone you love, everyone you know, everyone you ever
@@ -128,7 +128,7 @@
                     lived there--on a mote of dust suspended in a sunbeam."
                     <footer>— <cite>Carl Sagan, Pale Blue Dot, 1994.</cite></footer>
                 </blockquote>
-                </p>
+                
                 <p>
                     The fragility of mankinds home in the universe plays a large part in driving Project
                     Athena's team to tackle the emerging technical problems of tomorrow.

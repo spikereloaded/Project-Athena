@@ -84,8 +84,11 @@ nav>a {
   top: 100%;
   left: 0;
   background: rgba(0, 0, 0,.7);
+  display:none;
 }
-
+#navigation.nav-open {
+    display: block;
+}
 #navigation>ul {
   list-style: none;
 }
@@ -267,7 +270,7 @@ footer li {
     top: unset;
     left: unset;
     background: unset;
-    display: block !important;
+    display: block;
   }
 
   #navigation>ul {

@@ -1,5 +1,4 @@
 
-const arrow = document.getElementById("scroll-arrow");
 const kennedyText = document.getElementById("kennedy-reference-content");
 const videoControls = document.getElementById("video-controls");
 const toggleButton = document.getElementById("toggle-button");
@@ -9,13 +8,14 @@ const volumeDown = document.getElementById("volume-down");
 const skipForward = document.getElementById("skip-forward");
 
 
+
 // toggles the play state of the video playing in the background of panel 3
 function toggleVideo() {
 
     const faIcon = document.querySelector("#toggle-button[data-fa-i2svg]") ;
 
   if (panelVideo.paused) {
-    panelVideo.volume = 0;
+    panelVideo.volume = 0.2;
     kennedyText.style.visibility = "hidden";
     videoControls.style.display = "flex";
     faIcon.classList.remove("fa-play");
