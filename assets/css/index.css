@@ -107,7 +107,10 @@ header {
   border-radius: 2px;
   line-height: .8rem;
 }
-
+#base-one-location>div:hover ,
+#base-two-location>div:hover {
+  scale: 1.5;
+}
 @keyframes rotateLocator {
   0% {
     transform: rotateZ(0deg);
@@ -202,11 +205,10 @@ header {
   display:flex;
   flex-direction: column;
   align-items: center;
-  padding-top:20px;
 
 }
 
-#toggle-button {
+#video-playback-toggle-button {
   padding: 15px;
   font-size: 120%;
   margin: 10px;
@@ -228,7 +230,7 @@ header {
   text-transform: uppercase;
   font-family: "Aldrich", "Verdana", sans-serif;
   text-decoration: none;
-  margin-bottom:10px;
+  margin:10px;
 }
 
 #kennedy-reference-content {
@@ -257,7 +259,15 @@ header {
 #sagan-quote>#sagan-quote-title:hover {
   border: 1px solid rgba(255, 255, 255, 0.8);
 }
-
+.hidden-element{
+  display:none;
+}
+#video-controls.hidden{
+  display:none;
+}
+.visible-element{
+  display:block;
+}
 #sagan-quote {
   padding-top: 1px;
   background-image: url("../images/launch.jpg");

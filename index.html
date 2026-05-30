@@ -15,7 +15,7 @@
     <meta name="author" content="Project Athena">
     <meta name="keywords" content="">
     <meta name="description" content="">
- 
+
     <script src="https://kit.fontawesome.com/6f68c772bb.js" crossorigin="anonymous" defer></script>
     <script src="assets/js/index.js" defer></script>
     <script src="assets/js/site-wide.js" defer></script>
@@ -90,14 +90,14 @@
         </section>
         <section id="kennedy-box">
             <div id="kennedy-video-button-container">
-                <div id="video-controls" style="display:none;">
+                <div id="video-controls" class="hidden">
                     <div id="volume-up" class="video-control-class"><i class="fa-solid fa-volume-up"></i></div>
                     <div id="volume-down" class="video-control-class"> <i class="fa-solid fa-volume-down"></i></div>
-                    <div id="skip-forward" class="video-control-class"> +10</div>
+                    <div id="skip-forward" class="video-control-class"> <i class="fa-solid fa-forward"></i></div>
                 </div>
-                <div>
-                    <span class=" fa-solid fa-play" id="toggle-button" onclick="toggleVideo()">
-                    </span>
+                <div id="video-playback-toggle-button">
+                    <span id="play-icon" class="fa-solid fa-play"></span>
+                    <span id="stop-icon" class="fa-solid fa-pause hidden-element"></span>
                 </div>
             </div>
             <div id="kennedy-reference-content">
@@ -106,20 +106,21 @@
                     When Kennedy set the goal of reaching the moon by the end
                     of the decade, many thought his confidence was misguided; man was
                     not meant for the stars. </p>
-                    <p>We've decided to take up the challenge and push forwards to mankinds next frontier.</p>
+                <p>We've decided to take up the challenge and push forwards to mankinds next frontier.</p>
             </div>
 
             <video muted loop id="kennedy-video">
                 <source src="assets/videos/kennedy.mp4" type="video/mp4">
                 Your browser doesn't support the HTML5 video tag. Please update your browser or use an alternative.
             </video>
-            <div id="arrow-three" class="scroll-arrow" data-next-panel="sagan-quote"><img src="assets/images/scroll-arrow.png">
+            <div id="arrow-three" class="scroll-arrow" data-next-panel="sagan-quote"><img
+                    src="assets/images/scroll-arrow.png">
             </div>
         </section>
         <section id="sagan-quote">
             <div id="sagan-quote-title">
                 <h2>Expanding the frontier of tomorrow, Today.</h2>
-                
+
                 <blockquote>
                     "Look again at that dot. That's here. That's home. That's us.
                     On it everyone you love, everyone you know, everyone you ever
@@ -128,7 +129,7 @@
                     lived there--on a mote of dust suspended in a sunbeam."
                     <footer>— <cite>Carl Sagan, Pale Blue Dot, 1994.</cite></footer>
                 </blockquote>
-                
+
                 <p>
                     The fragility of mankinds home in the universe plays a large part in driving Project
                     Athena's team to tackle the emerging technical problems of tomorrow.

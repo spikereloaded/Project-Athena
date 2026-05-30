@@ -1,61 +1,37 @@
 
 const kennedyText = document.getElementById("kennedy-reference-content");
 const videoControls = document.getElementById("video-controls");
-const toggleButton = document.getElementById("toggle-button");
 const panelVideo = document.getElementById("kennedy-video");
-const volumeUp = document.getElementById("volume-up");
-const volumeDown = document.getElementById("volume-down");
-const skipForward = document.getElementById("skip-forward");
+
 
 
 
 // toggles the play state of the video playing in the background of panel 3
 function toggleVideo() {
 
-    const faIcon = document.querySelector("#toggle-button[data-fa-i2svg]") ;
 
   if (panelVideo.paused) {
     panelVideo.volume = 0.2;
     kennedyText.style.visibility = "hidden";
-    videoControls.style.display = "flex";
-    faIcon.classList.remove("fa-play");
-    faIcon.classList.add("fa-stop");
+    videoControls.classList.toggle("hidden");
+    document.getElementById("play-icon").classList.toggle("hidden-element");
+    document.getElementById("stop-icon").classList.toggle("hidden-element");
     panelVideo.play();
     panelVideo.muted = false;
   } else {
     panelVideo.pause();
-    videoControls.style.display = "none";
+    videoControls.classList.toggle("hidden");
     kennedyText.style.visibility = "visible";
-    faIcon.classList.remove("fa-stop");
-    faIcon.classList.add("fa-play");
+    document.getElementById("play-icon").classList.toggle("hidden-element");
+    document.getElementById("stop-icon").classList.toggle("hidden-element");
+
   }
 }
 
-volumeUp.addEventListener("click", function() {
-  let newVolume = panelVideo.volume + 0.2;
-  if (newVolume <= 1){
-    panelVideo.volume = panelVideo.volume + 0.2;
-    console.log("volume:", newVolume);
-  }
-  else{
-    console.log("Max volume hit");
-  }
-  
-})
-volumeDown.addEventListener("click", function() {
-  let newVolume = panelVideo.volume - 0.2;
-  if (newVolume >= 0 ){
-    panelVideo.volume = panelVideo.volume - 0.2;
-    console.log("volume", newVolume);
-  } else {
-    console.log("Min volume hit");
-  }
- 
-})
-skipForward.addEventListener("click", function() {
-  panelVideo.currentTime = panelVideo.currentTime + 10;
-  console.log("current time", panelVideo.currentTime);
-})
+function skipForward() {
+  panelVideo.currentTime += 10;
+}
+
 //https://www.w3schools.com/howto/howto_js_countdown.asp
 // // Set the date we're counting down to
 // var countDownDate = new Date("Jan 5, 2028 15:37:25").getTime();
@@ -87,4 +63,33 @@ skipForward.addEventListener("click", function() {
 //   }
 // }, 1000);
 
+//sets event listeners on video control elements. 
+// increases volume by 20% each time it's clicked, up to a max of 100%
+document.getElementById("volume-up").addEventListener("click", function () {
+  let newVolume = panelVideo.volume + 0.2;
+  if (newVolume <= 1) {
+    panelVideo.volume = panelVideo.volume + 0.2;
+    console.log("volume:", newVolume);
+  }
+  else {
+    console.log("Max volume hit");
+  }
 
+})
+
+//decreases volume by 20% each time it's clicked, down to a min of 0%
+document.getElementById("volume-down").addEventListener("click", function () {
+  let newVolume = panelVideo.volume - 0.2;
+  if (newVolume >= 0) {
+    panelVideo.volume = panelVideo.volume - 0.2;
+    console.log("volume", newVolume);
+  } else {
+    console.log("Min volume hit");
+  }
+
+})
+
+//skips forward 10 seconds in the video when clicked.
+document.getElementById("skip-forward").addEventListener("click", skipForward);
+//toggles the play state of the video when the play/pause button is clicked.
+document.getElementById("video-playback-toggle-button").addEventListener("click", toggleVideo);
