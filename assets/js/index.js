@@ -12,19 +12,27 @@ function toggleVideo() {
 
   if (panelVideo.paused) {
     panelVideo.volume = 0.2;
-    kennedyText.style.visibility = "hidden";
+    kennedyText.classList.remove("slide-in");
+    kennedyText.classList.toggle("slide-out");
     videoControls.classList.toggle("hidden");
     document.getElementById("play-icon").classList.toggle("hidden-element");
-    document.getElementById("stop-icon").classList.toggle("hidden-element");
-    panelVideo.play();
+    document.getElementById("stop-icon").classList.toggle("hidden-element"); 
+    //add in feedback class to show button was pressed
+    document.getElementById("video-playback-toggle-button").classList.toggle("pressed-control");
     panelVideo.muted = false;
+    panelVideo.play();
+   
+    scrollToPanel("kennedy-box");
   } else {
     panelVideo.pause();
     videoControls.classList.toggle("hidden");
-    kennedyText.style.visibility = "visible";
+    kennedyText.classList.toggle("slide-out");
+    kennedyText.classList.toggle("slide-in");
+   
     document.getElementById("play-icon").classList.toggle("hidden-element");
     document.getElementById("stop-icon").classList.toggle("hidden-element");
-
+    //remove feedback class to show button was pressed
+    document.getElementById("video-playback-toggle-button").classList.toggle("pressed-control");
   }
 }
 
@@ -88,6 +96,16 @@ document.getElementById("volume-down").addEventListener("click", function () {
   }
 
 })
+
+//add in eventlistener that detects click on panelVideo and triggers toggleVideo function
+
+  panelVideo.addEventListener("click", () => {
+    if(panelVideo.paused === false){
+      toggleVideo();
+    }
+  });
+
+
 
 //skips forward 10 seconds in the video when clicked.
 document.getElementById("skip-forward").addEventListener("click", skipForward);
