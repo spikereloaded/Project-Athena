@@ -264,6 +264,10 @@ header {
   font-family: "Aldrich", "Verdana", sans-serif;
   font-size:300%;
 }
+#volume-plus, #volume-minus, #skip-text{
+  font-family: "Aldrich", "Verdana", sans-serif;
+  font-size:300%;
+}
 @keyframes video-overlay {
   0% {
     opacity: 0
