@@ -61,7 +61,7 @@
                         Priority Excavation Basin.<br>October/2030</p>
                 </div>
             </div>
-            <div id="header-title">
+            <article id="header-title">
                 <h1>We're on a mission.</h1>
                 <p>The moon is our closest neighbour, yet we know so little about it. </p>
                 <p>ATHENA is here to change that.</p>
@@ -70,44 +70,48 @@
                     <a class="button-class " href="launch.html" target="_blank">Recent Launches</a>
                 </p>
                 <div id="launch-countdown">Next Launch:<br><span id="countdown-text">Calculating...</span></div> -->
-            </div>
+            </article>
             <div id="arrow-one" class="scroll-arrow" data-next-panel="mission-statement"><img
                     src="assets/images/scroll-arrow-opaque.png"> </div>
         </header>
         <section id="mission-statement">
 
-            <div id="mission-statement-content">
+            <article id="mission-statement-content">
                 <h2>Taking the next leap, for all mankind.</h2>
                 <p>We plan to have a permanent base on the moon by 2028.</p>
                 <p>Construction on the Athena-1 Base camp started in 2024 and we currently have 34 lunar
                     engineers housed on the moon full time.
                 </p>
-            </div>
+            </article>
 
             <div id="arrow-two" class="scroll-arrow" data-next-panel="kennedy-box"><img
                     src="assets/images/scroll-arrow-opaque.png">
             </div>
         </section>
-        <section id="kennedy-box">
+        <section id="kennedy-box">                
+            <div id="controls-feedback-overlay" >
+                <div id="overlay-skip-text" class="hidden-element">+10s</div>
+            </div>
+
             <div id="kennedy-video-button-container">
                 <div id="video-controls" class="hidden">
                     <div id="volume-up" class="video-control-class"><i class="fa-solid fa-volume-up"></i></div>
                     <div id="volume-down" class="video-control-class"> <i class="fa-solid fa-volume-down"></i></div>
-                    <div id="skip-forward" class="video-control-class"> <i class="fa-solid fa-forward"></i></div>
+                    <div id="skip-forward" class="video-control-class"> <i class="fa-solid fa-clock-rotate-left fa-flip-horizontal"></i></div>
                 </div>
                 <div id="video-playback-toggle-button">
                     <span id="play-icon" class="fa-solid fa-play"></span>
                     <span id="stop-icon" class="fa-solid fa-pause hidden-element"></span>
                 </div>
             </div>
-            <div id="kennedy-reference-content">
+            <article id="kennedy-reference-content">
                 <h2>Meeting the challenge set in 1961.</h2>
                 <p>
                     When Kennedy set the goal of reaching the moon by the end
                     of the decade, many thought his confidence was misguided; man was
                     not meant for the stars. </p>
                 <p>We've decided to take up the challenge and push forwards to mankinds next frontier.</p>
-            </div>
+                </article>
 
             <video muted loop id="kennedy-video">
                 <source src="assets/videos/kennedy.mp4" type="video/mp4">
@@ -118,7 +122,7 @@
             </div>
         </section>
         <section id="sagan-quote">
-            <div id="sagan-quote-title">
+            <article id="sagan-quote-title">
                 <h2>Expanding the frontier of tomorrow, Today.</h2>
 
                 <blockquote>
@@ -134,13 +138,11 @@
                     The fragility of mankinds home in the universe plays a large part in driving Project
                     Athena's team to tackle the emerging technical problems of tomorrow.
                 </p>
-            </div>
+            </article>
 
         </section>
     </main>
     <footer>
-
-
         <div id="footer-content">
             <div id="social-links-holder">
                 <a href="https://www.x.com" target="_blank"><img id="x-logo" src="assets/images/social-logos/x-logo.svg"
